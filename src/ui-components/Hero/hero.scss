@@ -51,8 +51,8 @@
       @media (max-width: 768px) {
         font-size: 3.6rem;
         line-height: 1;
-        max-width: 600px;
         letter-spacing: 1px;
+        max-width: 600px;
       }
     }
     h2 {
@@ -78,7 +78,7 @@
         width: 60%;
       }
       @media (max-width: 600px) {
-        width: 100%;
+        width: 94%;
       }
     }
     .blob-top {
@@ -96,6 +96,9 @@
       z-index: 1;
       bottom: -32%;
       height: 65%;
+      @media (max-width: 600px) {
+        bottom: -40%;
+      }
     }
     .main-image {
       height: 100%;

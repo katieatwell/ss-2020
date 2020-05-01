@@ -96,56 +96,6 @@ function Home(props) {
                 speciality cocktails.
               </Typography>
               <Typography>Menu coming soon!!</Typography>
-              {/* <ul className={classes.list}>
-                <li className={classes.listItem}>
-                  <Typography
-                    className={classes.listItemTitle}
-                    variant="h3"
-                    component="h3"
-                  >
-                    Drink Number 1
-                  </Typography>
-                  <Typography className="list-name--content">
-                    Ingredient, Ingredient, Ingredient, Ingredient...
-                  </Typography>
-                </li>
-                <li className={classes.listItem}>
-                  <Typography
-                    className={classes.listItemTitle}
-                    variant="h3"
-                    component="h3"
-                  >
-                    Drink Number 2
-                  </Typography>
-                  <Typography className="list-name--content">
-                    Ingredient, Ingredient, Ingredient, Ingredient...
-                  </Typography>
-                </li>
-                <li className={classes.listItem}>
-                  <Typography
-                    className={classes.listItemTitle}
-                    variant="h3"
-                    component="h3"
-                  >
-                    Drink Number 3
-                  </Typography>
-                  <Typography className="list-name--content">
-                    Ingredient, Ingredient, Ingredient, Ingredient...
-                  </Typography>
-                </li>
-                <li className={classes.listItem}>
-                  <Typography
-                    className={classes.listItemTitle}
-                    variant="h3"
-                    component="h3"
-                  >
-                    Drink Number 4
-                  </Typography>
-                  <Typography className="list-name--content">
-                    Ingredient, Ingredient, Ingredient, Ingredient...
-                  </Typography>
-                </li>
-              </ul> */}
             </Box>
             <img src={ssBlue} className="ss-stamp-blue" />
             <Box className="content-right">

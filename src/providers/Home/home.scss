@@ -112,10 +112,11 @@
   }
   .section-2-header {
     @media (max-width: 991px) {
-      line-height: 1.2;
-      font-size: 3rem;
+      line-height: 1;
+      font-size: 3.4rem;
       width: 92%;
       letter-spacing: 1px;
+      font-weight: 700;
     }
   }
   .headshot-container {
@@ -136,6 +137,9 @@
     @media (max-width: 768px) {
       text-align: center;
     }
+  }
+  h2 {
+    line-height: 1.2;
   }
   h3 {
     margin: 2rem 0;
