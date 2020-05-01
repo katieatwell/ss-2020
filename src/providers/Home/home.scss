@@ -330,15 +330,17 @@
       font-size: 4.2rem;
     }
     @media (max-width: 991px) {
-      font-size: 3rem;
-      letter-spacing: 1.2px;
+      line-height: 1;
+      font-size: 3.4rem;
+      letter-spacing: 1px;
+      font-weight: 700;
     }
   }
   h3 {
     line-height: 1.8;
     text-transform: none;
     &:nth-of-type(2) {
-      line-height: 1.4;
+      line-height: 1.2;
     }
     @media (max-width: 991px) {
       margin-top: 2rem;
