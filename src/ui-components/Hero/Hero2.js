@@ -17,7 +17,7 @@ function Hero(props) {
   }));
   const classes = useStyles();
   return (
-    <Box className={classes.root}>
+    <Box className={[classes.root, "hero-container"].join(" ")}>
       <Box className="content-left">
         <Typography variant="h1" component="h1">
           Charlotte's first true seltzery.
