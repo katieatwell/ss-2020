@@ -1,0 +1,112 @@
+.MuiBox-root-29 {
+  height: auto;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4% 0 4% 0;
+  position: relative;
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  @media (max-width: 991px) {
+    padding: 2% 0 8% 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 92%;
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 768px) {
+    padding: 1% 0 8% 0;
+  }
+  .content-left {
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    @media (max-width: 991px) {
+      margin-bottom: 2rem;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 4rem;
+    }
+    h1 {
+      @media (max-width: 1224px) {
+        font-size: 5.4rem;
+      }
+      @media (max-width: 1024px) {
+        font-size: 5rem;
+      }
+      @media (max-width: 991px) {
+        font-size: 4rem;
+        max-width: 600px;
+      }
+      @media (max-width: 768px) {
+        font-size: 3rem;
+        line-height: 1;
+        max-width: 600px;
+      }
+    }
+    h2 {
+      width: 100%;
+      margin-top: 32px;
+    }
+  }
+  .content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+    .image-container {
+      width: 92%;
+      position: relative;
+      max-height: 84%;
+      @media (max-width: 991px) {
+        width: 60%;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+    .blob-top {
+      position: absolute;
+      left: -8%;
+      top: -10%;
+      @media (max-width: 600px) {
+        top: -16%;
+        left: -16%;
+      }
+    }
+    .blob-bottom {
+      position: absolute;
+      right: -30%;
+      z-index: 1;
+      bottom: -32%;
+      height: 65%;
+    }
+    .main-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 2;
+      position: relative;
+      border-radius: 4px;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+    }
+  }
+}

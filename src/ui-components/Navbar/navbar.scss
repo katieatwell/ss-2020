@@ -1,0 +1,23 @@
+.logo-container {
+  background-color: transparent;
+  height: 200px;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  @media (max-width: 991px) {
+    height: 160px;
+  }
+  .logo {
+    height: 96px;
+    @media (max-width: 991px) {
+      height: 80px;
+    }
+    @media (max-width: 991px) {
+      height: 62px;
+    }
+  }
+}
