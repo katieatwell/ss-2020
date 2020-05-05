@@ -12,6 +12,7 @@ import headshot from "../../assets/images/headshot.png";
 import { homepageTheme } from "./theme";
 import ssBlue from "../../assets/images/ss-blue.png";
 import cocktail from "../../assets/images/soda-drink.png";
+import whiteStamp from "../../assets/images/ss-crafted.png";
 import imgTop from "../../assets/images/coffee.png";
 import imgBottom from "../../assets/images/campers.png";
 import "./home.scss";
@@ -42,18 +43,16 @@ function Home(props) {
           </Box>
           <Box width="46%" className="content-right">
             <Typography>
-              I'm baby kombucha fixie activated charcoal, quinoa vice pabst
-              tumeric brooklyn bushwick wayfarers before they sold out. Tousled
-              shabby chic hoodie next level palo santo cliche forage salvia
-              tattooed yuccie pitchfork kitsch. Kogi chartreuse kickstarter
-              bitters, gluten-free live-edge DIY whatever pinterest. Tote bag
-              salvia hell of, scenester +1 meh listicle master cleanse unicorn
-              offal. Food truck DIY man braid, brunch gluten-free coloring book
-              mustache franzen banjo poke thundercats cornhole. Tumblr forage
-              lyft celiac before they sold out unicorn banh mi shoreditch
-              snackwave intelligentsia occupy tofu art party helvetica. Raclette
-              leggings offal polaroid 8-bit wolf pinterest kombucha succulents
-              jianbing letterpress.
+              Summit Seltzery is a place made for full-on living. Our craft hard
+              seltzer is a delicious adult beverage, sure. But it’s also the
+              sidekick to your next adventure. This means your weekend routine
+              just got a whole lot more fun. So did after-work drinks. Switch up
+              your gym workout with a seltzery workout (daily yoga, run club,
+              maybe even silent disco pilates). Kick your buddy’s butt at
+              foosball or discover you’re ridiculously good at badminton (who
+              knew?). Maybe find yourself getting inspired to pick up a
+              paintbrush again while you’re admiring our rotating collection of
+              local art.
             </Typography>
             <Typography variant="h2" component="h2" className={classes.h2}>
               Whatever your next adventure is, we'll make sure it's a fun one.
@@ -93,9 +92,9 @@ function Home(props) {
               </Typography>
               <Typography variant="h3" component="h3">
                 In addition to draft seltzers we will also have a variety of
-                speciality cocktails.
+                speciality seltzer based cocktails.
               </Typography>
-              <Typography>Menu coming soon!!</Typography>
+              <Typography variant="h3">Menu coming soon!!</Typography>
             </Box>
             <img src={ssBlue} className="ss-stamp-blue" />
             <Box className="content-right">
@@ -123,8 +122,8 @@ function Home(props) {
               summer.
             </Typography>
             <Typography variant="h4" component="h3" className={classes.h4}>
-              123 Address St. <br />
-              Charlotte NC 28123
+              2215 Thrift Rd. Suite B <br />
+              Charlotte NC 28208
             </Typography>
             <br />
             <Typography variant="h2" component="h3" className={classes.h3}>
@@ -138,6 +137,7 @@ function Home(props) {
           <Box className="content-right">
             <img src={imgTop} className="img-top" />
             <img src={imgBottom} className="img-bottom" />
+            <img src={whiteStamp} className="white-stamp" />
           </Box>
         </Box>
       </Box>

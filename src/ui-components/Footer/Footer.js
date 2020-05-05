@@ -14,11 +14,11 @@ function Footer(props) {
         justifyContent="space-evenly"
         className="bg"
       >
-        <a href="instagram.com">
+        <a href="https://www.instagram.com/summitseltzer/" target="_blank">
           <Typography>instagram</Typography>
         </a>
         <img src={logo} className="footer-logo" />
-        <a href="facebook.com">
+        <a href="https://www.facebook.com/SummitSeltzerCo" target="_blank">
           <Typography>facebook</Typography>
         </a>
       </Box>

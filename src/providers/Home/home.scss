@@ -293,6 +293,16 @@
         width: 98%;
       }
     }
+    .white-stamp {
+      position: absolute;
+      z-index: 4;
+      height: 164px;
+      right: 0;
+      top: 10%;
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
     .img-bottom {
       position: absolute;
       bottom: -10%;
