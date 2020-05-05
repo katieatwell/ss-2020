@@ -130,7 +130,7 @@ function Home(props) {
               Media and <br />
               general inquiries.
             </Typography>
-            <a href="mailto:kristincagney@summitseltzer.com">
+            <a href="mailto:kristin@summitseltzer.com">
               <Button className={classes.button}>Contact</Button>
             </a>
           </Box>
