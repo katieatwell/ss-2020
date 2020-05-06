@@ -29,7 +29,12 @@ function Hero(props) {
       <Box className="content-right">
         <div className="image-container">
           <img src={Blob1} className="blob-top" />
-          <img src={heroImg} alt="People on a porch" className="main-image" />
+          <img
+            src={heroImg}
+            alt="People on a porch"
+            className="main-image"
+            id="main-image"
+          />
           <img src={Blob2} className="blob-bottom" />
         </div>
       </Box>

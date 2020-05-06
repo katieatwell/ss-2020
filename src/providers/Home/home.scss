@@ -1,3 +1,14 @@
+.home-wrap {
+  opacity: 0;
+  &.loaded {
+    animation-name: fadeInHome;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.72, 0.19, 0.41, 0.89);
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+}
 .makeStyles-darkSection-12 {
   transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   @media (max-width: 991px) {
@@ -358,5 +369,13 @@
   }
   a {
     text-decoration: none;
+  }
+}
+@keyframes fadeInHome {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

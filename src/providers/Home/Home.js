@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Hero } from "../../ui-components";
 import { Box, Typography, Button } from "@material-ui/core";
@@ -17,11 +17,17 @@ import imgTop from "../../assets/images/coffee.png";
 import imgBottom from "../../assets/images/campers.png";
 import "./home.scss";
 
-function Home(props) {
+function Home({ loaded }) {
   const useStyles = makeStyles((theme) => homepageTheme(theme));
   const classes = useStyles();
+  const [loadHome, setLoadHome] = useState("");
+  useEffect(() => {
+    setLoadHome("loaded");
+  }, [loaded]);
+
+  const homeClassName = ["home-wrap", loadHome].join(" ");
   return (
-    <>
+    <div className={homeClassName}>
       <Hero />
       <Box className={classes.darkSection} zIndex="1" position="relative">
         <Box className="section-1-inner">
@@ -141,7 +147,7 @@ function Home(props) {
           </Box>
         </Box>
       </Box>
-    </>
+    </div>
   );
 }
 
