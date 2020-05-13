@@ -65,6 +65,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    position: relative;
     width: 50%;
     transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
     @media (max-width: 991px) {
