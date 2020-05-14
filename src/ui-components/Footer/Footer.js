@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Box, Typography } from "@material-ui/core";
-
 import logo from "../../assets/images/logo-w.png";
 import "./footer.scss";
 
-function Footer(props) {
+function Footer({ className }) {
   return (
-    <footer>
+    <footer className={className}>
       <Box
         display="flex"
         alignItems="center"

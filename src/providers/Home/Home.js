@@ -10,6 +10,7 @@ import blobRightMed from "../../assets/images/small-blob.png";
 import craftedStampLg from "../../assets/images/ss-crafted-mtn.png";
 import headshot from "../../assets/images/headshot.png";
 import { homepageTheme } from "./theme";
+import { buttonTheme } from "../../styles/buttonTheme";
 import ssBlue from "../../assets/images/ss-blue.png";
 import cocktail from "../../assets/images/soda-drink.png";
 import whiteStamp from "../../assets/images/ss-crafted.png";
@@ -19,7 +20,9 @@ import "./home.scss";
 
 function Home({ loaded }) {
   const useStyles = makeStyles((theme) => homepageTheme(theme));
+  const useButtonStyles = makeStyles((theme) => buttonTheme(theme));
   const classes = useStyles();
+  const buttonClass = useButtonStyles();
   const [loadHome, setLoadHome] = useState("");
   useEffect(() => {
     setLoadHome("loaded");
@@ -93,14 +96,16 @@ function Home({ loaded }) {
           >
             <Box className="content-left">
               <Typography variant="h2" component="h2">
-                Reach for something different. Like one of these house
-                favorites.
+                Reach for something <br />
+                different. Like one of
+                <br />
+                these house favorites.
               </Typography>
               <Typography variant="h3" component="h3">
                 In addition to draft seltzers we will also have a variety of
                 speciality seltzer based cocktails.
               </Typography>
-              <Typography variant="h3">Menu coming soon!!</Typography>
+              <Typography variant="h5">Menu coming soon!!</Typography>
             </Box>
             <img src={ssBlue} className="ss-stamp-blue" />
             <Box className="content-right">
@@ -124,8 +129,8 @@ function Home({ loaded }) {
         <Box className="section-3-inner">
           <Box className="content-left">
             <Typography variant="h1" component="h2" className={classes.header1}>
-              See you this <br />
-              summer.
+              See you <br />
+              this summer.
             </Typography>
             <Typography variant="h4" component="h3" className={classes.h4}>
               2215 Thrift Rd. Suite B <br />
@@ -137,7 +142,7 @@ function Home({ loaded }) {
               general inquiries.
             </Typography>
             <a href="mailto:kristin@summitseltzer.com">
-              <Button className={classes.button}>Contact</Button>
+              <Button className={buttonClass.button}>Contact</Button>
             </a>
           </Box>
           <Box className="content-right">

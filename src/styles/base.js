@@ -23,27 +23,33 @@ const theme = createMuiTheme({
     h1: {
       fontFamily: '"Abhaya Libre", serif',
       fontWeight: 600,
-      letterSpacing: "6px",
+      letterSpacing: "2.4px",
       fontSize: "6rem",
       lineHeight: 1.167,
     },
     h2: {
       fontFamily: '"Abhaya Libre", serif',
       fontWeight: 600,
-      fontSize: "2.8rem",
+      fontSize: "3.75rem",
       lineHeight: 1.3,
     },
     h3: {
       fontFamily: '"Work Sans", serif',
-      fontSize: "1.4rem",
+      fontSize: "1.38rem",
+      letterSpacing: ".3px",
     },
     h4: {
       fontFamily: '"Work Sans", sans-serif',
       fontWeight: 600,
-      fontSize: "1rem",
+      fontSize: "1.125rem",
       textTransform: "uppercase",
       lineHeight: 1.167,
-      letterSpacing: "-0.01562em",
+      letterSpacing: ".8px",
+    },
+    h5: {
+      fontFamily: '"Abhaya Libre", serif',
+      fontSize: "2rem",
+      fontWeight: 600,
     },
     body1: {
       fontFamily: '"Work Sans", sans-serif',

@@ -1,4 +1,13 @@
 footer {
+  &.not-found {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @media (max-width: 768px) {
+      position: relative;
+    }
+  }
   .bg {
     background-size: cover;
     background-position: center;
