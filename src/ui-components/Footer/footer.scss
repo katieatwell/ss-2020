@@ -13,12 +13,34 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../../assets/images/footer-bg.jpg");
-    padding: 4rem 0;
     @media (max-width: 768px) {
       flex-direction: column;
     }
-  }
+    .container {
+      @media (max-width: 991px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    .newsletter-container {
+      width: 50%;
+      padding: 0 0 0 12%;
+      @media (max-width: 991px) {
+        padding: 6rem 0;
+        width: 90%;
+        border-top: 1px solid #ddd;
+      }
+    }
+    .logo-container-footer {
+      padding: 0 12% 0 0;
+      border-right: 1px solid #ddd;
+      @media (max-width: 991px) {
+        padding: 0 0 4rem 0;
 
+        border-right: none;
+      }
+    }
+  }
   .footer-logo {
     height: 136px;
     @media (max-width: 768px) {
@@ -37,5 +59,25 @@ footer {
       color: #26c0d4;
       transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
     }
+  }
+  input {
+    width: 70%;
+    margin-right: 1%;
+    @media (max-width: 600px) {
+      width: 60%;
+    }
+  }
+  button {
+    max-width: 29%;
+    @media (max-width: 600px) {
+      max-width: 39%;
+    }
+  }
+  button,
+  input {
+    display: inline;
+  }
+  input::placeholder {
+    color: #fff;
   }
 }
