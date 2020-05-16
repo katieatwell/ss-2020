@@ -10,8 +10,20 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    width: "60%",
+    margin: "auto",
     "&:focus": {
       outlineColor: "#fff",
+    },
+    "@media(max-width: 600px)": {
+      width: "99%",
+      top: "6%",
+    },
+  },
+  title: {
+    "@media(max-width: 600px)": {
+      lineHeight: "1",
+      fontSize: "3rem",
     },
   },
   outline: {
@@ -83,7 +95,6 @@ export default function SpringModal({
         open={open}
         onClose={handleClose}
         closeAfterTransition
-        style={{ maxWidth: "60%", margin: "auto" }}
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
@@ -95,6 +106,7 @@ export default function SpringModal({
             <Typography
               component="h2"
               variant="h2"
+              className={classes.title}
               id="spring-modal-title"
               style={{ marginBottom: "1.2rem" }}
             >
