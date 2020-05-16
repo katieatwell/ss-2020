@@ -1,21 +1,29 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Hero } from "../../ui-components";
+import { Hero, Image } from "../../ui-components";
 import { Box, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import section2Image from "../../assets/images/coffees.png";
-import blobLeftLg from "../../assets/images/splash-blob-left.png";
-import blobLeftSm from "../../assets/images/circle-blob.png";
+import section2ImageWebp from "../../assets/images/coffees.webp";
+import blobLeftLg from "../../assets/images/splash-blob-left.svg";
+import blobLeftSm from "../../assets/images/circle-blob.svg";
 import blobRightMed from "../../assets/images/small-blob.png";
 import craftedStampLg from "../../assets/images/ss-crafted-mtn.png";
+import craftedStampLgWebp from "../../assets/images/ss-crafted-mtn.webp";
 import headshot from "../../assets/images/headshot.png";
+import headshotWebp from "../../assets/images/headshot.webp";
 import { homepageTheme } from "./theme";
 import { buttonTheme } from "../../styles/buttonTheme";
 import ssBlue from "../../assets/images/ss-blue.png";
+import ssBlueWebp from "../../assets/images/ss-blue.webp";
 import cocktail from "../../assets/images/soda-drink.png";
+import cocktailWebp from "../../assets/images/soda-drink.webp";
 import whiteStamp from "../../assets/images/ss-crafted.png";
+import whiteStampWebp from "../../assets/images/ss-crafted.webp";
 import imgTop from "../../assets/images/coffee.png";
+import imgTopWebp from "../../assets/images/coffee.webp";
 import imgBottom from "../../assets/images/campers.png";
+import imgBottomWebp from "../../assets/images/campers.webp";
 import "./home.scss";
 
 function Home({ loaded }) {
@@ -43,7 +51,15 @@ function Home({ loaded }) {
             </Typography>
             <Box className="image-container">
               <div className="main-image">
-                <img src={section2Image} />
+                <Image
+                  cover
+                  webp={{ src: section2ImageWebp }}
+                  fallback={{
+                    src: section2Image,
+                    type: "png",
+                    alt: "People holding coffee cups",
+                  }}
+                />
               </div>
 
               <img src={blobLeftLg} className="blob-left-lg" />
@@ -66,14 +82,29 @@ function Home({ loaded }) {
             <Typography variant="h2" component="h2" className={classes.h2}>
               Whatever your next adventure is, we'll make sure it's a fun one.
             </Typography>
-            <img src={craftedStampLg} className="mtn-stamp" />
+            <Image
+              className="mtn-stamp"
+              webp={{ src: craftedStampLgWebp }}
+              fallback={{
+                src: craftedStampLg,
+                type: "png",
+                alt: "Outline of Mountain Range",
+              }}
+            />
           </Box>
         </Box>
       </Box>
       <Box>
         <Box className="section-2-inner">
           <div className="headshot-container">
-            <img src={headshot} />
+            <Image
+              webp={{ src: headshotWebp }}
+              fallback={{
+                src: headshot,
+                type: "png",
+                alt: "Kristin Cagney, headshot",
+              }}
+            />
           </div>
           <Typography
             variant="h1"
@@ -91,7 +122,6 @@ function Home({ loaded }) {
             justifyContent="space-between"
             margin="12% auto 2%"
             position="relative"
-            // maxWidth="84%"
             flexWrap="wrap"
           >
             <Box className="content-left">
@@ -107,10 +137,26 @@ function Home({ loaded }) {
               </Typography>
               <Typography variant="h5">Menu coming soon!!</Typography>
             </Box>
-            <img src={ssBlue} className="ss-stamp-blue" />
+            <Image
+              className="ss-stamp-blue"
+              webp={{ src: ssBlueWebp }}
+              fallback={{
+                src: ssBlue,
+                type: "png",
+                alt: "Summit Seltzer Stamp",
+              }}
+            />
             <Box className="content-right">
               <Box className="drink-container">
-                <img src={cocktail} className="cocktail" />
+                <Image
+                  className="cocktail"
+                  webp={{ src: cocktailWebp }}
+                  fallback={{
+                    src: cocktail,
+                    type: "png",
+                    alt: "Seltzer Cocktail",
+                  }}
+                />
                 <img className="blob-right-lg" src={blobLeftLg} />
                 <img className="blob-right-sm" src={blobLeftSm} />
               </Box>
@@ -141,14 +187,38 @@ function Home({ loaded }) {
               Media and <br />
               general inquiries.
             </Typography>
-            <a href="mailto:kristin@summitseltzer.com">
+            <a href="mailto:kristin@summitseltzer.com" className="link">
               <Button className={buttonClass.button}>Contact</Button>
             </a>
           </Box>
           <Box className="content-right">
-            <img src={imgTop} className="img-top" />
-            <img src={imgBottom} className="img-bottom" />
-            <img src={whiteStamp} className="white-stamp" />
+            <Image
+              className="img-top"
+              webp={{ src: imgTopWebp }}
+              fallback={{
+                src: imgTop,
+                type: "png",
+                alt: "Woman drinking from mug at sunset",
+              }}
+            />
+            <Image
+              className="img-bottom"
+              webp={{ src: imgBottomWebp }}
+              fallback={{
+                src: imgBottom,
+                type: "png",
+                alt: "Two hikers",
+              }}
+            />
+            <Image
+              className="white-stamp"
+              webp={{ src: whiteStampWebp }}
+              fallback={{
+                src: whiteStamp,
+                type: "png",
+                alt: "White Summit Seltzer Stamp",
+              }}
+            />
           </Box>
         </Box>
       </Box>

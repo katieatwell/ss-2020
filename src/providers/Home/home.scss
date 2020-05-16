@@ -32,7 +32,7 @@
     h2 {
       max-width: 88%;
       @media (max-width: 991px) {
-        margin: 2rem auto 0 auto;
+        margin: 2rem auto 2.6rem auto;
       }
     }
     @media (max-width: 991px) {
@@ -80,10 +80,10 @@
       position: absolute;
     }
     .blob-left-sm {
-      left: -20%;
+      left: -39%;
       position: absolute;
-      bottom: 14%;
-      height: 104px;
+      bottom: 12%;
+      height: 422px;
     }
     .blob-left-lg,
     .blob-left-sm {
@@ -155,16 +155,17 @@
   }
   .content-left {
     flex-direction: column;
-    width: 46%;
+    width: 48%;
     display: flex;
     @media (max-width: 768px) {
       width: 100%;
+      text-align: center;
     }
   }
   .content-right {
     align-items: center;
     flex-direction: column;
-    width: 54%;
+    width: 52%;
     display: flex;
     position: relative;
     @media (max-width: 768px) {
@@ -222,17 +223,16 @@
   .blob-right-sm {
     position: absolute;
     bottom: 25%;
-    right: -20%;
+    right: -98%;
     z-index: 1;
-    height: 74px;
+    height: 400px;
     @media (max-width: 768px) {
       bottom: 30%;
-      right: -34%;
+      right: -128%;
     }
     @media (max-width: 600px) {
-      bottom: 33%;
-      right: -52%;
-      height: 64px;
+      bottom: 34%;
+      right: -172%;
     }
   }
 }
@@ -258,10 +258,16 @@
     justify-content: space-between;
     height: 100%;
     flex-direction: column;
+    .link {
+      width: 200px;
+    }
     @media (max-width: 991px) {
       width: 100%;
       text-align: center;
       margin: 2rem auto;
+      .link {
+        margin: auto;
+      }
     }
   }
   .content-right {
