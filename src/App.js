@@ -28,7 +28,7 @@ function App() {
     <MuiThemeProvider theme={theme}>
       <ScrollToTop />
       <Navbar loaded={loaded} />
-      <SpringModal
+      {/* <SpringModal
         open={showModal}
         handleClose={handleClose}
         title="Our Covid-19 Response"
@@ -40,7 +40,7 @@ function App() {
               meditation chartreuse kogi. Neutra mumblecore single-origin coffee
               meditation activated charcoal tofu slow-carb man braid af banjo
               echo park selfies."
-      />
+      /> */}
       <Switch>
         <Route component={Home} exact path="/" loaded={loaded} />
         <Route component={NotFound} />
