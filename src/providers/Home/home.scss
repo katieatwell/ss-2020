@@ -33,6 +33,10 @@
       max-width: 88%;
       @media (max-width: 991px) {
         margin: 2rem auto 2.6rem auto;
+        line-height: 1;
+        font-size: 3.4rem;
+        letter-spacing: 1.2px;
+        font-weight: 700;
       }
     }
     @media (max-width: 991px) {
@@ -124,7 +128,7 @@
       line-height: 1;
       font-size: 3.4rem;
       width: 92%;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       font-weight: 700;
     }
   }
@@ -152,6 +156,12 @@
   }
   h2 {
     line-height: 1.2;
+    @media (max-width: 991px) {
+      line-height: 1;
+      font-size: 3.4rem;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+    }
   }
   h3 {
     margin: 2rem 0;
@@ -360,6 +370,14 @@
     }
     @media (max-width: 991px) {
       line-height: 1;
+      font-size: 3.4rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+  }
+  .MuiTypography-h2 {
+    @media (max-width: 991px) {
+      line-height: 1 !important;
       font-size: 3.4rem;
       letter-spacing: 1px;
       font-weight: 700;

@@ -1,0 +1,22 @@
+.eyebrow {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/footer-bg.jpg");
+  padding: 12px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  p {
+    font-weight: 900 !important;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2;
+    @media (max-width: 768px) {
+      width: 94%;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { Hero, Image } from "../../ui-components";
 import { Box, Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import section2Image from "../../assets/images/coffees.png";
+import section2ImageDesktopWebp from "../../assets/images/coffees-updated.webp";
 import section2ImageWebp from "../../assets/images/coffees.webp";
 import blobLeftLg from "../../assets/images/splash-blob-left.svg";
 import blobLeftSm from "../../assets/images/circle-blob.svg";
@@ -11,7 +12,8 @@ import blobRightMed from "../../assets/images/small-blob.png";
 import craftedStampLg from "../../assets/images/ss-crafted-mtn.png";
 import craftedStampLgWebp from "../../assets/images/ss-crafted-mtn.webp";
 import headshot from "../../assets/images/headshot.jpg";
-import headshotWebp from "../../assets/images/headshot.jpg";
+import headshotPink from "../../assets/images/headshot-pink.jpg";
+import headshotPinkWebp from "../../assets/images/headshot-pink.webp";
 import { homepageTheme } from "./theme";
 import { buttonTheme } from "../../styles/buttonTheme";
 import ssBlue from "../../assets/images/ss-blue.png";
@@ -44,8 +46,8 @@ function Home({ loaded }) {
         <Box className="section-1-inner">
           <Box className="content-left">
             <Typography>
-              We believe being healthy and having fun can go hand in hand. Which
-              is why we created a space for everyone to enjoy our
+              We believe healthy living and having fun can go hand in hand.
+              Which is why we created a space for everyone to enjoy our
               house-fermented, crystal-clear hard seltzer together. It's like a
               brewery but for seltzer. A seltzery.
             </Typography>
@@ -53,7 +55,7 @@ function Home({ loaded }) {
               <div className="main-image">
                 <Image
                   cover
-                  webp={{ src: section2ImageWebp }}
+                  webp={{ src: section2ImageDesktopWebp }}
                   fallback={{
                     src: section2Image,
                     type: "png",
@@ -98,11 +100,18 @@ function Home({ loaded }) {
         <Box className="section-2-inner">
           <div className="headshot-container">
             <Image
-              webp={{ src: headshotWebp }}
+              webp={{ src: headshotPinkWebp }}
               fallback={{
-                src: headshot,
-                type: "png",
+                src: headshotPink,
+                type: "jpg",
                 alt: "Kristin Cagney, headshot",
+              }}
+              mobile={{
+                mediaQuery: "max-width: 991px",
+                fallback: {
+                  src: headshot,
+                  type: "jpg",
+                },
               }}
             />
           </div>

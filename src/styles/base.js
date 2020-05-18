@@ -32,6 +32,7 @@ const theme = createMuiTheme({
       fontWeight: 600,
       fontSize: "3.75rem",
       lineHeight: 1.3,
+      letterSpacing: "1.3px",
     },
     h3: {
       fontFamily: '"Work Sans", serif',

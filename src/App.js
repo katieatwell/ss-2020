@@ -3,7 +3,13 @@ import "./App.scss";
 import { Switch, Route, useLocation } from "react-router-dom";
 import Home from "./providers/Home";
 import NotFound from "./providers/NotFound";
-import { Navbar, Footer, ScrollToTop, SpringModal } from "./ui-components";
+import {
+  Navbar,
+  Footer,
+  ScrollToTop,
+  SpringModal,
+  Eyebrow,
+} from "./ui-components";
 import theme from "./styles/base";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 
@@ -27,6 +33,7 @@ function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <ScrollToTop />
+      <Eyebrow />
       <Navbar loaded={loaded} />
       {/* <SpringModal
         open={showModal}
