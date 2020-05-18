@@ -20,9 +20,12 @@ function App() {
   let location = useLocation();
 
   useLayoutEffect(() => {
-    if (document.fonts.status === "loaded") {
+    if (/*@cc_on!@*/ false || !!document.documentMode) {
+      setLoaded(true);
+    } else if (document.fonts.status === "loaded") {
       setLoaded(true);
     }
+
     setShowModal(true);
   }, []);
 
