@@ -5,7 +5,12 @@ import "./eyebrow.scss";
 
 function Eyebrow(props) {
   return (
-    <Box className="eyebrow">
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      className="eyebrow"
+    >
       <Typography>
         We plan to abide by all COVID-19 related regulations and will keep this
         site updated on specific practices we will take as we get closer to
