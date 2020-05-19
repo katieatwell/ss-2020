@@ -31,14 +31,11 @@ function Footer({ className }) {
               style={{ marginBottom: "2rem" }}
             />
             <Box display="flex" justifyContent="space-between">
-              <a
-                href="https://www.facebook.com/SummitSeltzerCo"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/summitseltzery" target="_blank">
                 <Typography>facebook</Typography>
               </a>
               <a
-                href="https://www.instagram.com/summitseltzer/"
+                href="https://www.instagram.com/summitseltzery/"
                 target="_blank"
               >
                 <Typography>instagram</Typography>
