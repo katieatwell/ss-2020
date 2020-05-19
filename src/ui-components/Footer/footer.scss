@@ -1,10 +1,10 @@
 footer {
   &.not-found {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -140px;
     left: 0;
     right: 0;
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       position: relative;
     }
   }

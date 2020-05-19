@@ -28,7 +28,7 @@ function NotFound(props) {
         Sorry, we can't seem to find what you are looking for.
       </Typography>
       <Link to="/">
-        <Button className={buttonClass.button}>Home</Button>
+        <Button className={buttonClass.buttonOutline}>Home</Button>
       </Link>
     </Box>
   );
